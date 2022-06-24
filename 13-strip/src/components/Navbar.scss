@@ -1,0 +1,76 @@
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+.Navbar {
+  padding: 1rem 2rem;
+  background: transparent;
+  height: 5rem;
+  z-index: 1;
+  position: relative;
+  .Navbar__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .Navbar__toggle-btn {
+      background-color: black;
+      padding: 0.4rem 0.85rem;
+      border-radius: 6px;
+      transition: all 0.3s linear;
+      svg {
+        color: #fff;
+        font-size: 1.1rem;
+      }
+      &:hover {
+        background-color: var(--clr-grey-5);
+      }
+    }
+  }
+}
+
+.Navbar__link-list {
+  list-style: none;
+  display: none;
+
+  li {
+    margin-right: 4rem;
+    &:last-child {
+      margin: 0;
+    }
+    button {
+      font-size: 1.1rem;
+      color: #fff;
+      text-transform: capitalize;
+    }
+    .sign-in {
+      background-color: #000;
+      color: #fff;
+      padding: 0.35rem 0.7rem;
+      border-radius: 6px;
+    }
+  }
+}
+@media screen and (min-width: 800px) {
+  .Navbar__toggle-btn {
+    display: none;
+    // align-items: center;
+  }
+  .Navbar__link-list {
+    display: flex;
+  }
+  .Navbar {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .sign-in {
+    margin-left: 6rem;
+  }
+}

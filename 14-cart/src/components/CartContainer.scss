@@ -1,0 +1,19 @@
+.cart-container {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  width: 40rem;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+.cart-container h1 {
+  font-size: 2rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid var(--clr-grey-5);
+  padding-top: 1rem;
+}

@@ -1,0 +1,19 @@
+.cocktail-item {
+  width: 25rem;
+  margin-top: 1rem;
+
+  img {
+    width: 25rem;
+    height: 18rem;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+  }
+  .info {
+    background-color: #fff;
+    width: 100%;
+    padding: 1rem;
+    p {
+      margin: 0.5rem 0;
+    }
+  }
+}

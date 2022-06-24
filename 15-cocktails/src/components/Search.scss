@@ -1,0 +1,32 @@
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .form-control {
+    margin-top: 4rem;
+    width: 40rem;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: var(--lightShadow);
+    border-radius: 5px;
+    form {
+      display: flex;
+      flex-direction: column;
+      label {
+        font-size: 1rem;
+        color: var(--primaryColor);
+        font-weight: 500;
+        letter-spacing: 1.3px;
+        margin-bottom: 0.8rem;
+      }
+      input {
+        border: none;
+        background-color: var(--mainGrey);
+        font-size: 1.2rem;
+        padding: 0.5rem;
+        border-radius: 8px;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.nav {
+  a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: #000;
+    font-weight: 400;
+  }
+  ul {
+    list-style: none;
+  }
+
+  background: #fff;
+  height: 5rem;
+  width: 100vw;
+  padding: 1rem 3rem;
+  box-shadow: var(--lightShadow);
+
+  .nav-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      color: #000;
+      font-family: sans-serif;
+      span {
+        color: var(--primaryColor);
+      }
+    }
+    ul {
+      display: flex;
+      li:last-child {
+        margin-left: 2rem;
+      }
+    }
+  }
+}
+
+.active {
+  border-bottom: 2px solid var(--primaryColor);
+}
